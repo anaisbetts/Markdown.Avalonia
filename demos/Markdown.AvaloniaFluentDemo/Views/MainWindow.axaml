@@ -140,6 +140,7 @@
           x:Name="MarkdownViewer"
           SaveScrollValueWhenContentUpdated="True"
           
+          SelectionEnabled="True"
           Markdown="{Binding Text}"
 
           AssetPathRoot="{Binding AssetPathRoot}"
