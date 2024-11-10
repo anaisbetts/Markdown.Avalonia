@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
+/*
 namespace Markdown.Avalonia.Extensions
 {
     public class DivideColorExtension : MarkupExtension
@@ -69,6 +70,11 @@ namespace Markdown.Avalonia.Extensions
         public InstancedBinding? Initiate(AvaloniaObject target, AvaloniaProperty? targetProperty, object? anchor = null, bool enableDataValidation = false)
         {
             return InstancedBinding.OneWay(new StaticBindingObservable(_value));
+        }
+
+        InstancedBinding? IBinding.Initiate(AvaloniaObject target, AvaloniaProperty? targetProperty, object? anchor, bool enableDataValidation)
+        {
+            throw new NotImplementedException();
         }
 
         class StaticBindingObservable : IObservable<object>
@@ -182,3 +188,4 @@ namespace Markdown.Avalonia.Extensions
         }
     }
 }
+*/

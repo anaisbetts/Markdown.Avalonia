@@ -131,7 +131,7 @@
   <Style Selector=".Markdown_Avalonia_MarkdownViewer TextBlock.CodeBlock">
     <Style.Setters>
       <Setter Property="FontFamily"      Value="menlo,monaco,consolas,droid sans mono,inconsolata,courier new,monospace,dejavu sans mono"/>
-      <Setter Property="Foreground"      Value="{mde:DivideColor Blue, SystemBaseHighColor, 0.45}"/>
+      <Setter Property="Foreground"      Value="{DynamicResource SystemBaseHighColor}"/>
     </Style.Setters>
   </Style>
   <Style Selector=".Markdown_Avalonia_MarkdownViewer Border.NoContainer">
@@ -142,7 +142,7 @@
 
   <Style Selector=".Markdown_Avalonia_MarkdownViewer ctxt|CCode">
     <Style.Setters>
-      <Setter Property="Foreground" Value="{mde:DivideColor Blue, SystemBaseHighColor, 0.45}" />
+      <Setter Property="Foreground" Value="{DynamicResource SystemBaseHighColor}" />
       <Setter Property="Background" Value="{mde:Alpha SystemBaseHighColor, 0.15}" />
     </Style.Setters>
   </Style>
